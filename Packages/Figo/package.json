@@ -1,0 +1,7 @@
+{
+  "name": "com.figo.common",
+  "displayName": "Figo's Package",
+  "version": "2.0.4",
+  "unity": "2020.3",
+  "description": "Unity Utility Developed By Figo"
+}
