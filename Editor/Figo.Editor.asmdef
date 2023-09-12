@@ -1,0 +1,18 @@
+{
+    "name": "Figo.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:18ef609de545e774f942a955d479957b"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
