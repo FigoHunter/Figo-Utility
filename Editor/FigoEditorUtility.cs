@@ -10,25 +10,25 @@ namespace Figo
     {
         public static string OpenFolderPanel(string title, string folder, string defaultName)
         {
-            folder = EditorPrefs.GetString($"OPEN_FOLDER_{title}", folder);
+            folder = EditorPrefs.GetString($"OPEN_FOLDER", folder);
             folder = EditorUtility.OpenFolderPanel(title, folder, defaultName);
             if (string.IsNullOrEmpty(folder))
             {
                 return folder;
             }
-            EditorPrefs.SetString($"OPEN_FOLDER_{title}", folder);
+            EditorPrefs.SetString($"OPEN_FOLDER", folder);
             return folder;
         }
 
         public static string OpenFilePanel(string title, string folder, string extension)
         {
-            folder = EditorPrefs.GetString($"OPEN_FILE_{title}", folder);
+            folder = EditorPrefs.GetString($"OPEN_FILE", folder);
             var file = EditorUtility.OpenFilePanel(title, folder, extension);
             if (string.IsNullOrEmpty(file))
             {
                 return file;
             }
-            EditorPrefs.SetString($"OPEN_FILE_{title}", Path.GetDirectoryName(file));
+            EditorPrefs.SetString($"OPEN_FILE", Path.GetDirectoryName(file));
             return file;
         }
     }
