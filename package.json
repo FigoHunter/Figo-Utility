@@ -3,5 +3,8 @@
   "displayName": "Figo's Package",
   "version": "2.0.4",
   "unity": "2020.3",
-  "description": "Unity Utility Developed By Figo"
+  "description": "Unity Utility Developed By Figo",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "2.0.2"
+  }
 }
